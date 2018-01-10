@@ -16,6 +16,11 @@ img:hover {
     filter: gray;
     -webkit-filter: grayscale(1);
 }
+
+a:hover {
+  cursor:pointer;
+}
+
   `]
 })
 export class ImageComponent implements OnInit {

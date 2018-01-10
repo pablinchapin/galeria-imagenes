@@ -1,3 +1,6 @@
+
+import { routes } from './app.routes';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +12,10 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ImageListComponent } from './gallery/image-list/image-list.component';
 import { ImageComponent } from './gallery/image-list/image.component';
 import { ImageDetailComponent } from './gallery/image-detail/image-detail.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+
+
 
 @NgModule({
   declarations: [
@@ -17,9 +24,12 @@ import { ImageDetailComponent } from './gallery/image-detail/image-detail.compon
     GalleryComponent,
     ImageListComponent,
     ImageComponent,
-    ImageDetailComponent
+    ImageDetailComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
+    routes,
     BrowserModule
   ],
   providers: [ImageService],

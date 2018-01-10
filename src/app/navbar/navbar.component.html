@@ -14,19 +14,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <!--
         <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
+        -->
         <li><a href="#">Verduras</a></li>
         <li><a href="#">Frutas</a></li>
-        <li><a href="#">Granos</a></li>
         <li><a href="#">Despensa</a></li>
+        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Recetas</a></li>
             <li><a href="#">Calendarios</a></li>
             
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Cuando sembrar</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Como ahorrar</a></li>
           </ul>
@@ -41,8 +41,10 @@
       </form>
     -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/gallery']">Inicio</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/about']">Nosotros</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/contact']">Contacto</a></li>
+        <!--
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -51,8 +53,11 @@
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
+
+
           </ul>
         </li>
+      -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

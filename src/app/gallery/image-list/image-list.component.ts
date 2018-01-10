@@ -22,7 +22,7 @@ export class ImageListComponent implements OnInit {
     this.images = this.imageService.getImages();
   }
 
-  onSelect(image: Image){
+  imageClickOnSelect(image: Image){
     console.log(image);
     this.selectedImage = image;
   }

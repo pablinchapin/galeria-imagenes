@@ -1,6 +1,6 @@
 <app-image-detail [selectedImage]="selectedImage"></app-image-detail>
 <div class="container">
   <div class="row">
-    <app-image *ngFor="let image of images" [image]="image" (click)="onSelect(image)"></app-image>
+    <app-image *ngFor="let image of images" [image]="image" (click)="imageClickOnSelect(image)"></app-image>
   </div>
 </div>
