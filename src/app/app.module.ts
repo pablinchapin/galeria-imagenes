@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 
 import { ImageService } from './services/image.service';
 
+import { HttpModule } from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -30,7 +32,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     routes,
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
